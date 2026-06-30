@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapnil Dalavi | Python Developer & Data Science Enthusiast</title>
+    <meta name="description" content="Swapnil Dalavi — Python Developer and Data Science Enthusiast. Specializing in scalable backend architectures, REST APIs, and data-driven solutions.">
+    <meta name="keywords" content="Swapnil Dalavi, Python Developer, Data Science, Django, Portfolio">
+    <meta name="author" content="Swapnil Dalavi">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Swapnil Dalavi | Python Developer & Data Science Enthusiast">
+    <meta property="og:description" content="Python Developer and Data Science Enthusiast building modern web applications and data-driven systems.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ═══ Loading Screen ═══ -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-text">SD.</div>
+        <div class="loader-bar"></div>
+    </div>
+
+    <!-- ═══ Cursor Glow ═══ -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ═══ Noise Overlay ═══ -->
+    <div class="noise-overlay"></div>
+
+    <!-- ═══ Navigation ═══ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">SD<span class="dot">.</span></a>
+            
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact" class="nav-cta">Contact Me</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══ Mobile Nav Overlay ═══ -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+        <div class="mobile-nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════
+         HERO SECTION
+         ═══════════════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+        <!-- Hero Visual Background Graphics -->
+        <div class="hero-visual-bg">
+            <!-- Left Brain Graphic -->
+            <div class="bg-graphic brain-graphic">
+                <img src="images/neural_brain.png" alt="Neural Brain" class="glowing-brain">
+            </div>
+
+            <!-- Right Robot Hand Graphic -->
+            <div class="bg-graphic robot-hand-graphic">
+                <img src="images/robot_hand.png" alt="Generative AI Robot Hand" class="glowing-robot-hand">
+            </div>
+
+            <!-- Right Neural Net -->
+            <div class="bg-graphic neural-net-right">
+                <svg viewBox="0 0 220 300" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Connections -->
+                    <g class="net-connections">
+                        <!-- Layer 1 to 2 -->
+                        <line x1="20" y1="40" x2="80" y2="25" />
+                        <line x1="20" y1="40" x2="80" y2="75" />
+                        <line x1="20" y1="40" x2="80" y2="125" />
+                        <line x1="20" y1="90" x2="80" y2="25" />
+                        <line x1="20" y1="90" x2="80" y2="75" />
+                        <line x1="20" y1="90" x2="80" y2="125" />
+                        <line x1="20" y1="90" x2="80" y2="175" />
+                        <line x1="20" y1="140" x2="80" y2="75" />
+                        <line x1="20" y1="140" x2="80" y2="125" />
+                        <line x1="20" y1="140" x2="80" y2="175" />
+                        <line x1="20" y1="140" x2="80" y2="225" />
+                        <line x1="20" y1="190" x2="80" y2="125" />
+                        <line x1="20" y1="190" x2="80" y2="175" />
+                        <line x1="20" y1="190" x2="80" y2="225" />
+                        <line x1="20" y1="190" x2="80" y2="275" />
+                        <line x1="20" y1="240" x2="80" y2="175" />
+                        <line x1="20" y1="240" x2="80" y2="225" />
+                        <line x1="20" y1="240" x2="80" y2="275" />
+
+                        <!-- Layer 2 to 3 -->
+                        <line x1="80" y1="25" x2="140" y2="25" />
+                        <line x1="80" y1="25" x2="140" y2="75" />
+                        <line x1="80" y1="25" x2="140" y2="125" />
+                        <line x1="80" y1="75" x2="140" y2="25" />
+                        <line x1="80" y1="75" x2="140" y2="75" />
+                        <line x1="80" y1="75" x2="140" y2="125" />
+                        <line x1="80" y1="75" x2="140" y2="175" />
+                        <line x1="80" y1="125" x2="140" y2="75" />
+                        <line x1="80" y1="125" x2="140" y2="125" />
+                        <line x1="80" y1="125" x2="140" y2="175" />
+                        <line x1="80" y1="125" x2="140" y2="225" />
+                        <line x1="80" y1="175" x2="140" y2="125" />
+                        <line x1="80" y1="175" x2="140" y2="175" />
+                        <line x1="80" y1="175" x2="140" y2="225" />
+                        <line x1="80" y1="175" x2="140" y2="275" />
+                        <line x1="80" y1="225" x2="140" y2="175" />
+                        <line x1="80" y1="225" x2="140" y2="225" />
+                        <line x1="80" y1="225" x2="140" y2="275" />
+                        <line x1="80" y1="275" x2="140" y2="175" />
+                        <line x1="80" y1="275" x2="140" y2="225" />
+                        <line x1="80" y1="275" x2="140" y2="275" />
+
+                        <!-- Layer 3 to 4 -->
+                        <line x1="140" y1="25" x2="200" y2="65" />
+                        <line x1="140" y1="25" x2="200" y2="115" />
+                        <line x1="140" y1="75" x2="200" y2="65" />
+                        <line x1="140" y1="75" x2="200" y2="115" />
+                        <line x1="140" y1="75" x2="200" y2="165" />
+                        <line x1="140" y1="125" x2="200" y2="115" />
+                        <line x1="140" y1="125" x2="200" y2="165" />
+                        <line x1="140" y1="125" x2="200" y2="215" />
+                        <line x1="140" y1="175" x2="200" y2="115" />
+                        <line x1="140" y1="175" x2="200" y2="165" />
+                        <line x1="140" y1="175" x2="200" y2="215" />
+                        <line x1="140" y1="225" x2="200" y2="165" />
+                        <line x1="140" y1="225" x2="200" y2="215" />
+                        <line x1="140" y1="275" x2="200" y2="165" />
+                        <line x1="140" y1="275" x2="200" y2="215" />
+                    </g>
+
+                    <!-- Nodes -->
+                    <g class="net-nodes">
+                        <!-- Input Layer -->
+                        <circle cx="20" cy="40" r="5.5" class="node-input" />
+                        <circle cx="20" cy="90" r="5.5" class="node-input" />
+                        <circle cx="20" cy="140" r="5.5" class="node-input" />
+                        <circle cx="20" cy="190" r="5.5" class="node-input" />
+                        <circle cx="20" cy="240" r="5.5" class="node-input" />
+
+                        <!-- Hidden Layer 1 -->
+                        <circle cx="80" cy="25" r="5.5" class="node-hidden" />
+                        <circle cx="80" cy="75" r="5.5" class="node-hidden" />
+                        <circle cx="80" cy="125" r="5.5" class="node-hidden" />
+                        <circle cx="80" cy="175" r="5.5" class="node-hidden" />
+                        <circle cx="80" cy="225" r="5.5" class="node-hidden" />
+                        <circle cx="80" cy="275" r="5.5" class="node-hidden" />
+
+                        <!-- Hidden Layer 2 -->
+                        <circle cx="140" cy="25" r="5.5" class="node-hidden" />
+                        <circle cx="140" cy="75" r="5.5" class="node-hidden" />
+                        <circle cx="140" cy="125" r="5.5" class="node-hidden" />
+                        <circle cx="140" cy="175" r="5.5" class="node-hidden" />
+                        <circle cx="140" cy="225" r="5.5" class="node-hidden" />
+                        <circle cx="140" cy="275" r="5.5" class="node-hidden" />
+
+                        <!-- Output Layer -->
+                        <circle cx="200" cy="65" r="5.5" class="node-output" />
+                        <circle cx="200" cy="115" r="5.5" class="node-output" />
+                        <circle cx="200" cy="165" r="5.5" class="node-output" />
+                        <circle cx="200" cy="215" r="5.5" class="node-output" />
+                    </g>
+                </svg>
+            </div>
+
+            <!-- Left Neural Net -->
+            <div class="bg-graphic neural-net-left">
+                <svg viewBox="0 0 130 250" xmlns="http://www.w3.org/2000/svg">
+                    <g class="net-connections">
+                        <!-- Layer 1 to 2 -->
+                        <line x1="15" y1="35" x2="65" y2="20" />
+                        <line x1="15" y1="35" x2="65" y2="72" />
+                        <line x1="15" y1="35" x2="65" y2="125" />
+                        <line x1="15" y1="90" x2="65" y2="20" />
+                        <line x1="15" y1="90" x2="65" y2="72" />
+                        <line x1="15" y1="90" x2="65" y2="125" />
+                        <line x1="15" y1="90" x2="65" y2="177" />
+                        <line x1="15" y1="145" x2="65" y2="72" />
+                        <line x1="15" y1="145" x2="65" y2="125" />
+                        <line x1="15" y1="145" x2="65" y2="177" />
+                        <line x1="15" y1="145" x2="65" y2="230" />
+                        <line x1="15" y1="200" x2="65" y2="125" />
+                        <line x1="15" y1="200" x2="65" y2="177" />
+                        <line x1="15" y1="200" x2="65" y2="230" />
+
+                        <!-- Layer 2 to 3 -->
+                        <line x1="65" y1="20" x2="115" y2="60" />
+                        <line x1="65" y1="20" x2="115" y2="125" />
+                        <line x1="65" y1="72" x2="115" y2="60" />
+                        <line x1="65" y1="72" x2="115" y2="125" />
+                        <line x1="65" y1="72" x2="115" y2="190" />
+                        <line x1="65" y1="125" x2="115" y2="60" />
+                        <line x1="65" y1="125" x2="115" y2="125" />
+                        <line x1="65" y1="125" x2="115" y2="190" />
+                        <line x1="65" y1="177" x2="115" y2="125" />
+                        <line x1="65" y1="177" x2="115" y2="190" />
+                        <line x1="65" y1="230" x2="115" y2="125" />
+                        <line x1="65" y1="230" x2="115" y2="190" />
+                    </g>
+
+                    <g class="net-nodes">
+                        <circle cx="15" cy="35" r="4.5" class="node-input" />
+                        <circle cx="15" cy="90" r="4.5" class="node-input" />
+                        <circle cx="15" cy="145" r="4.5" class="node-input" />
+                        <circle cx="15" cy="200" r="4.5" class="node-input" />
+
+                        <circle cx="65" cy="20" r="4.5" class="node-hidden" />
+                        <circle cx="65" cy="72" r="4.5" class="node-hidden" />
+                        <circle cx="65" cy="125" r="4.5" class="node-hidden" />
+                        <circle cx="65" cy="177" r="4.5" class="node-hidden" />
+                        <circle cx="65" cy="230" r="4.5" class="node-hidden" />
+
+                        <circle cx="115" cy="60" r="4.5" class="node-output" />
+                        <circle cx="115" cy="125" r="4.5" class="node-output" />
+                        <circle cx="115" cy="190" r="4.5" class="node-output" />
+                    </g>
+                </svg>
+            </div>
+
+            <!-- Right Bottom Chart -->
+            <div class="bg-graphic tech-chart-right">
+                <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 10 100 Q 40 60 70 80 T 130 30 T 190 50" fill="none" class="chart-line-main" />
+                    <path d="M 10 110 Q 50 85 90 90 T 160 45 T 190 65" fill="none" class="chart-line-sub" />
+                    <line x1="10" y1="10" x2="10" y2="110" stroke="rgba(255,255,255,0.03)" />
+                    <line x1="10" y1="110" x2="190" y2="110" stroke="rgba(255,255,255,0.03)" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Swapnil Dalavi</h1>
+                <h2 class="hero-role">
+                    <span id="typewriter"></span><span class="cursor"></span>
+                </h2>
+                <p class="hero-desc">
+                    Python Developer with 1+ year of experience building backend services, REST APIs, and ML/AI-driven features in production environments. Currently building scalable backend systems at Walstar Tech using Python, FastAPI, SQL, and PostgreSQL. Hands-on experience across the ML pipeline — data preprocessing, feature engineering, and model integration — alongside contributions to a production Generative AI platform for construction-document automation.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket btn-icon"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-paper-plane btn-icon"></i> Contact Me
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/Swapnil882" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/swapnil-dalavi" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:swapnildalavi0882@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container"><div class="section-divider"></div></div>
+
+    <!-- ═══════════════════════════════════════════════════
+         ABOUT SECTION
+         ═══════════════════════════════════════════════════ -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="reveal">
+                <p class="section-label">01 — About</p>
+                <h2 class="section-title">Get to know me</h2>
+            </div>
+
+            <!-- Profile Card + Bio Row -->
+            <div class="about-hero reveal">
+                <div class="about-profile-card">
+                    <div class="profile-avatar">
+                        <img src="images/swapnil.jpg" alt="Swapnil Dalavi">
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Swapnil Dalavi</h3>
+                        <p class="profile-role">Python Developer & Data Science Enthusiast</p>
+                        <div class="profile-badges">
+                            <span class="badge"><i class="fas fa-map-marker-alt"></i> Kolhapur, India</span>
+                            <span class="badge"><i class="fas fa-briefcase"></i> Open to Work</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-bio">
+                    <p>
+                        I'm passionate about building modern backend services and data-driven systems.
+                        My expertise spans <strong>backend development</strong> with Python & FastAPI,
+                        <strong>machine learning</strong> pipelines (preprocessing, feature engineering, and model integration), 
+                        and building production-ready <strong>Generative AI</strong> applications.
+                    </p>
+                    <p>
+                        Currently, I design and maintain scalable backend systems at Walstar Tech using Python, FastAPI, SQL, and PostgreSQL. 
+                        I have hands-on experience with SQL databases and query optimization, as well as tools like MongoDB, Pytest, and AWS S3.
+                    </p>
+                </div>
+            </div>
+
+            <!-- What I Do — Icon Cards -->
+            <div class="about-highlights stagger-children">
+                <div class="highlight-card reveal">
+                    <div class="highlight-icon"><i class="fas fa-code"></i></div>
+                    <h4>Backend Dev</h4>
+                    <p>Python, Django, Flask, FastAPI & REST APIs</p>
+                </div>
+                <div class="highlight-card reveal">
+                    <div class="highlight-icon"><i class="fas fa-chart-line"></i></div>
+                    <h4>Data Science</h4>
+                    <p>Pandas, NumPy, SQL, EDA & Visualization</p>
+                </div>
+                <div class="highlight-card reveal">
+                    <div class="highlight-icon"><i class="fas fa-robot"></i></div>
+                    <h4>AI & GenAI</h4>
+                    <p>LangChain, OpenAI GPT, Gemini, RAG Systems</p>
+                </div>
+                <div class="highlight-card reveal">
+                    <div class="highlight-icon"><i class="fas fa-database"></i></div>
+                    <h4>Databases</h4>
+                    <p>PostgreSQL, MySQL, Query Optimization</p>
+                </div>
+            </div>
+
+            <!-- Education + Stats Row -->
+            <div class="about-bottom">
+                <div class="edu-card-v2 reveal-left">
+                    <div class="edu-v2-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-v2-content">
+                        <span class="edu-v2-label">Education</span>
+                        <h4 class="edu-v2-degree">B.Tech in Information Technology</h4>
+                        <p class="edu-v2-school">Dr. J.J. Magdum College of Engineering, Jaysingpur</p>
+                        <span class="edu-v2-year">2021 — 2025 &nbsp;·&nbsp; CGPA: 7.8</span>
+                    </div>
+                </div>
+
+                <div class="stats-row-v2 reveal-right">
+                    <div class="stat-v2">
+                        <div class="stat-v2-number">1<span>+</span></div>
+                        <div class="stat-v2-label">Years of Experience</div>
+                        <div class="stat-v2-bar"><div class="stat-v2-fill" style="width: 25%;"></div></div>
+                    </div>
+                    <div class="stat-v2">
+                        <div class="stat-v2-number">15<span>+</span></div>
+                        <div class="stat-v2-label">Projects Delivered</div>
+                        <div class="stat-v2-bar"><div class="stat-v2-fill" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="stat-v2">
+                        <div class="stat-v2-number">10<span>+</span></div>
+                        <div class="stat-v2-label">Technologies Used</div>
+                        <div class="stat-v2-bar"><div class="stat-v2-fill" style="width: 85%;"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Marquee -->
+            <div class="tech-marquee reveal">
+                <div class="marquee-track">
+                    <div class="marquee-pill"><i class="fab fa-python"></i> Python</div>
+                    <div class="marquee-pill"><i class="fas fa-bolt"></i> FastAPI</div>
+                    <div class="marquee-pill"><i class="fas fa-database"></i> PostgreSQL</div>
+                    <div class="marquee-pill"><i class="fas fa-database"></i> MongoDB</div>
+                    <div class="marquee-pill"><i class="fab fa-aws"></i> AWS S3</div>
+                    <div class="marquee-pill"><i class="fas fa-vial"></i> Pytest</div>
+                    <div class="marquee-pill"><i class="fas fa-brain"></i> Scikit-learn</div>
+                    <div class="marquee-pill"><i class="fas fa-table"></i> Pandas</div>
+                    <div class="marquee-pill"><i class="fas fa-chart-line"></i> NumPy</div>
+                    <div class="marquee-pill"><i class="fab fa-docker"></i> Docker</div>
+                    <div class="marquee-pill"><i class="fab fa-git-alt"></i> Git</div>
+                    <div class="marquee-pill"><i class="fas fa-language"></i> NLP</div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="marquee-pill"><i class="fab fa-python"></i> Python</div>
+                    <div class="marquee-pill"><i class="fas fa-bolt"></i> FastAPI</div>
+                    <div class="marquee-pill"><i class="fas fa-database"></i> PostgreSQL</div>
+                    <div class="marquee-pill"><i class="fas fa-database"></i> MongoDB</div>
+                    <div class="marquee-pill"><i class="fab fa-aws"></i> AWS S3</div>
+                    <div class="marquee-pill"><i class="fas fa-vial"></i> Pytest</div>
+                    <div class="marquee-pill"><i class="fas fa-brain"></i> Scikit-learn</div>
+                    <div class="marquee-pill"><i class="fas fa-table"></i> Pandas</div>
+                    <div class="marquee-pill"><i class="fas fa-chart-line"></i> NumPy</div>
+                    <div class="marquee-pill"><i class="fab fa-docker"></i> Docker</div>
+                    <div class="marquee-pill"><i class="fab fa-git-alt"></i> Git</div>
+                    <div class="marquee-pill"><i class="fas fa-language"></i> NLP</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="container"><div class="section-divider"></div></div>
+
+    <!-- ═══════════════════════════════════════════════════
+         EXPERIENCE SECTION
+         ═══════════════════════════════════════════════════ -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="reveal">
+                <p class="section-label">02 — Experience</p>
+                <h2 class="section-title">Where I've worked</h2>
+                <p class="section-desc">Professional journey from internships to a full-time role — each step building toward production-grade engineering.</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3 class="timeline-role">Python Developer</h3>
+                            <span class="timeline-date">Jan 2026 – Present</span>
+                        </div>
+                        <div class="timeline-company">Walstar Tech &nbsp;·&nbsp; Kolhapur</div>
+                        <ul class="timeline-tasks">
+                            <li>Design and maintain Python backend services and REST APIs powering AI-driven features for production applications.</li>
+                            <li>Develop Python data pipelines for collection, cleaning, and transformation of structured data to support analytics and product decisions.</li>
+                            <li>Apply machine learning workflows (preprocessing, feature engineering, model training and evaluation) to deliver predictive features integrated into backend services.</li>
+                            <li>Write and optimize SQL/PostgreSQL queries and schemas (joins, indexing, aggregations) for efficient data storage and retrieval.</li>
+                            <li>Collaborate with cross-functional teams using Git/GitHub version control to ship end-to-end features spanning Python services, APIs, and database layers.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3 class="timeline-role">Intern (Python & NLP)</h3>
+                            <span class="timeline-date">Jun 2025 – Aug 2025</span>
+                        </div>
+                        <div class="timeline-company">Celebal Technologies</div>
+                        <ul class="timeline-tasks">
+                            <li>Developed an intelligent movie review sentiment analysis system using NLP and Machine Learning to classify reviews as positive, negative, or neutral.</li>
+                            <li>Collected and processed large datasets of movie reviews, performed text preprocessing and feature extraction, and built sentiment classification models to generate audience opinion insights and trend analytics.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3 class="timeline-role">Data Science & ML Intern</h3>
+                            <span class="timeline-date">Jun — Aug 2024</span>
+                        </div>
+                        <div class="timeline-company">Earth Logic Ware Technologies &nbsp;·&nbsp; Kolhapur</div>
+                        <ul class="timeline-tasks">
+                            <li>Developed ML models for prediction and classification on real-world datasets.</li>
+                            <li>Applied NLP techniques for text analytics and sentiment analysis pipelines.</li>
+                            <li>Automated data workflows and built reusable Python scripts for data processing.</li>
+                            <li>Collaborated with the team to deliver project demos and technical documentation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container"><div class="section-divider"></div></div>
+
+    <!-- ═══════════════════════════════════════════════════
+         SKILLS SECTION
+         ═══════════════════════════════════════════════════ -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="reveal">
+                <p class="section-label">03 — Skills</p>
+                <h2 class="section-title">Technologies I work with</h2>
+            </div>
+
+            <div class="skills-grid stagger-children">
+                <!-- Languages -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-content">
+                        <i class="fas fa-language skill-card-icon"></i>
+                        <h3 class="skill-card-title">Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag highlight">Python</span>
+                            <span class="skill-tag highlight">SQL</span>
+                            <span class="skill-tag highlight">JavaScript</span>
+                            <span class="skill-tag">HTML5 / CSS3</span>
+                            <span class="skill-tag">Bash / Shell</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend & APIs -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-content">
+                        <i class="fas fa-server skill-card-icon"></i>
+                        <h3 class="skill-card-title">Backend & APIs</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag highlight">FastAPI</span>
+                            <span class="skill-tag">REST API Development</span>
+                            <span class="skill-tag">API Design</span>
+                            <span class="skill-tag">Web Crawling & Automation</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI/ML & Data Science -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-content">
+                        <i class="fas fa-brain skill-card-icon"></i>
+                        <h3 class="skill-card-title">AI/ML & Data Science</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag highlight">Machine Learning</span>
+                            <span class="skill-tag highlight">Generative AI</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">Data Preprocessing</span>
+                            <span class="skill-tag">Feature Engineering</span>
+                            <span class="skill-tag">Model Training & Evaluation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-content">
+                        <i class="fas fa-database skill-card-icon"></i>
+                        <h3 class="skill-card-title">Databases</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag highlight">PostgreSQL</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">SQL Query Optimization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-content">
+                        <i class="fas fa-tools skill-card-icon"></i>
+                        <h3 class="skill-card-title">Tools & Platforms</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag highlight">Pytest (Unit Testing)</span>
+                            <span class="skill-tag">AWS S3</span>
+                            <span class="skill-tag">Git & GitHub</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Linux / Bash</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend & UI -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-content">
+                        <i class="fas fa-desktop skill-card-icon"></i>
+                        <h3 class="skill-card-title">Frontend & UI</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Responsive Design</span>
+                            <span class="skill-tag">UI/UX Dashboards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container"><div class="section-divider"></div></div>
+
+    <!-- ═══════════════════════════════════════════════════
+         PROJECTS SECTION
+         ═══════════════════════════════════════════════════ -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="reveal">
+                <p class="section-label">04 — Projects</p>
+                <h2 class="section-title">Things I've built</h2>
+                <p class="section-desc">
+                    A selection of projects ranging from full-stack web applications to 
+                    AI/ML systems that solve real-world problems.
+                </p>
+            </div>
+
+            <div class="projects-grid stagger-children">
+                <!-- Project 1 (Bynaus AI) -->
+                <div class="project-card reveal">
+                    <img src="images/bynaus_ai.jpg" alt="Bynaus AI" class="project-card-image">
+                    <span class="project-overline">Production Backend</span>
+                    <h3 class="project-name">Bynaus AI — Construction Takeoff Platform</h3>
+                    <p class="project-desc">
+                        AI-powered quantity takeoff automation platform from construction drawings. Developed takeoff verification REST APIs, hardened extraction pipelines with PostGIS and AWS S3, improved vector geometry detection, and achieved high-reliability callbacks with retries and DLQs.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>MongoDB</span>
+                        <span>PostgreSQL</span>
+                        <span>PostGIS</span>
+                        <span>AWS S3</span>
+                        <span>Pytest</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Generative AI Chatbot Generator) -->
+                <div class="project-card reveal">
+                    <img src="images/chatbot_support.png" alt="Chatbot Support" class="project-card-image">
+                    <span class="project-overline">Generative AI</span>
+                    <h3 class="project-name">Generative AI Chatbot Generator</h3>
+                    <p class="project-desc">
+                        Automated chatbot generation system that crawls website URLs, processes extracted text, and generates embeddable real-time customer interaction script using LLMs and dynamic code synthesis with a React frontend and FastAPI backend.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>SQL</span>
+                        <span>React.js</span>
+                        <span>NLP</span>
+                        <span>Web Crawling</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 (360-Degree Feedback System) -->
+                <div class="project-card reveal">
+                    <img src="images/news_feedback.png" alt="News Feedback" class="project-card-image">
+                    <span class="project-overline">Mega Project</span>
+                    <h3 class="project-name">360° Feedback System for Government News</h3>
+                    <p class="project-desc">
+                        Large-scale feedback system collecting and analyzing input from citizens, media, and officials via digital surveys, utilizing sentiment analysis and interactive data visualization to improve news reach and accuracy.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>MySQL</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Data Viz</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 (Movie Reviews Sentiment) -->
+                <div class="project-card reveal">
+                    <img src="images/movie_sentiment.png" alt="Movie Reviews Sentiment" class="project-card-image">
+                    <span class="project-overline">AI / ML Project</span>
+                    <h3 class="project-name">Sentiment Analysis on Movie Reviews</h3>
+                    <p class="project-desc">
+                        Developed an intelligent movie review sentiment analysis system using NLP and Machine Learning to classify reviews as positive, negative, or neutral, extracting insights and trend analytics.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>MySQL</span>
+                        <span>NLP</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 (Car Rental) -->
+                <div class="project-card reveal">
+                    <img src="images/car_rental.png" alt="Car Rental" class="project-card-image">
+                    <span class="project-overline">Web App</span>
+                    <h3 class="project-name">Car Rental System</h3>
+                    <p class="project-desc">
+                        Designed and developed a Car Rental System with user login, booking, rental cost calculation, and an admin panel for fleet management.
+                    </p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Python</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Project 6 (AI Resume Screening) -->
+                <div class="project-card reveal">
+                    <img src="images/resume_screening.png" alt="Resume Screening" class="project-card-image">
+                    <span class="project-overline">AI Recruitment</span>
+                    <h3 class="project-name">AI Resume Screening Platform</h3>
+                    <p class="project-desc">
+                        AI-powered recruitment system with resume parsing, skill extraction, candidate ranking, and job matching analytics using NLP and Scikit-learn.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>NLP</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container"><div class="section-divider"></div></div>
+
+    <!-- ═══════════════════════════════════════════════════
+         CERTIFICATIONS SECTION
+         ═══════════════════════════════════════════════════ -->
+    <section class="section" id="certifications">
+        <div class="container">
+            <div class="reveal">
+                <p class="section-label">05 — Certifications</p>
+                <h2 class="section-title">Certifications & Achievements</h2>
+            </div>
+
+            <div class="certs-grid stagger-children">
+                <div class="cert-card reveal">
+                    <div class="cert-issuer">Acmegrade × Mood Indigo IIT Bombay</div>
+                    <h4 class="cert-name">Artificial Intelligence Training Completion</h4>
+                    <p class="cert-desc">Practical training completion in core AI concepts and applications.</p>
+                    <div class="cert-tags">
+                        <span>Artificial Intelligence</span>
+                        <span>Applied Learning</span>
+                        <span>Project Exposure</span>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-issuer">Udemy</div>
+                    <h4 class="cert-name">Machine Learning Certification</h4>
+                    <p class="cert-desc">Certification validating machine learning model-building workflow.</p>
+                    <div class="cert-tags">
+                        <span>Machine Learning</span>
+                        <span>Model Building</span>
+                        <span>Data Analysis</span>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-issuer">Udemy</div>
+                    <h4 class="cert-name">Complete 2025 Python Bootcamp</h4>
+                    <p class="cert-desc">Comprehensive Python bootcamp from beginner to intermediate level.</p>
+                    <div class="cert-tags">
+                        <span>Python</span>
+                        <span>Programming Fundamentals</span>
+                        <span>Problem Solving</span>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-issuer">Udemy</div>
+                    <h4 class="cert-name">Ultimate Web Development Course 2025</h4>
+                    <p class="cert-desc">Modern website development with responsive frontend practices.</p>
+                    <div class="cert-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Responsive Design</span>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-issuer">Code With Harry</div>
+                    <h4 class="cert-name">Ultimate Job Ready Data Science Course</h4>
+                    <p class="cert-desc">Job-focused data science workflow, analysis, and ML fundamentals.</p>
+                    <div class="cert-tags">
+                        <span>Data Science</span>
+                        <span>Pandas</span>
+                        <span>Visualization</span>
+                        <span>ML Basics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container"><div class="section-divider"></div></div>
+
+    <!-- ═══════════════════════════════════════════════════
+         STATS SECTION
+         ═══════════════════════════════════════════════════ -->
+    <section class="section" id="stats">
+        <div class="container">
+            <div class="reveal">
+                <p class="section-label">06 — Numbers</p>
+                <h2 class="section-title">Project Statistics</h2>
+            </div>
+
+            <div class="stats-grid stagger-children">
+                <div class="stats-card reveal">
+                    <div class="stats-value" data-target="15">0</div>
+                    <div class="stats-label">Projects Completed</div>
+                </div>
+                <div class="stats-card reveal">
+                    <div class="stats-value" data-target="1">0</div>
+                    <div class="stats-label">Years Experience</div>
+                </div>
+                <div class="stats-card reveal">
+                    <div class="stats-value" data-target="10">0</div>
+                    <div class="stats-label">Technologies Used</div>
+                </div>
+                <div class="stats-card reveal">
+                    <div class="stats-value" data-target="100">0K</div>
+                    <div class="stats-label">Lines of Code (K+)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container"><div class="section-divider"></div></div>
+
+    <!-- ═══════════════════════════════════════════════════
+         CONTACT SECTION
+         ═══════════════════════════════════════════════════ -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="reveal">
+                <p class="section-label">07 — Contact</p>
+            </div>
+            
+            <div class="contact-card-container reveal">
+                <!-- Left: Text & Info -->
+                <div class="contact-content-left">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-desc">
+                        I am currently open to new opportunities as a Python Developer and Data Science Enthusiast. 
+                        Whether you have a project, role, or question — I'd be happy to connect.
+                    </p>
+                    <div class="contact-socials-list">
+                        <a href="https://github.com/Swapnil882" target="_blank" rel="noopener" class="contact-social-item">
+                            <i class="fab fa-github"></i> <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/swapnil-dalavi" target="_blank" rel="noopener" class="contact-social-item">
+                            <i class="fab fa-linkedin-in"></i> <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Methods -->
+                <div class="contact-methods-right">
+                    <!-- Email Card -->
+                    <a href="mailto:swapnildalavi0882@gmail.com" class="contact-method-card">
+                        <div class="method-icon-wrapper">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="method-details">
+                            <span class="method-label">Email Me</span>
+                            <span class="method-value">swapnildalavi0882@gmail.com</span>
+                        </div>
+                        <i class="fas fa-arrow-right method-arrow"></i>
+                    </a>
+
+                    <!-- Phone Card -->
+                    <a href="tel:+919022458986" class="contact-method-card">
+                        <div class="method-icon-wrapper">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="method-details">
+                            <span class="method-label">Call Me</span>
+                            <span class="method-value">+91-9022458986</span>
+                        </div>
+                        <i class="fas fa-arrow-right method-arrow"></i>
+                    </a>
+
+                    <!-- Location Card -->
+                    <div class="contact-method-card">
+                        <div class="method-icon-wrapper">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="method-details">
+                            <span class="method-label">Location</span>
+                            <span class="method-value">Kolhapur, Maharashtra, India</span>
+                        </div>
+                    </div>
+
+                    <!-- Direct Email Button -->
+                    <a href="mailto:swapnildalavi0882@gmail.com" class="btn btn-primary contact-cta-btn">
+                        <i class="fas fa-paper-plane btn-icon"></i> Say Hello
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Footer ═══ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://github.com/Swapnil882" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/swapnil-dalavi" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:swapnildalavi0882@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p class="footer-text">
+                Built with <span class="accent">♥</span> by Swapnil Dalavi &nbsp;·&nbsp; © 2026
+            </p>
+        </div>
+    </footer>
+
+    <!-- ═══ Back to Top ═══ -->
+    <button class="back-to-top" id="backToTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="main.js"></script>
+</body>
+</html>
