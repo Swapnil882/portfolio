@@ -32,38 +32,3 @@ A sleek, premium, dark-themed developer portfolio website showcasing the project
 * **Skills Categories Grid**: Structured breakdown of Languages, Backend, AI/ML, Databases, Tools, and UI frameworks.
 * **Projects Grid**: Showcases 6 primary production and AI-driven projects, including **Bynaus AI (Construction Takeoff Platform)**.
 * **Direct Contacts**: Integrated `mailto` email references and instant `tel` telephone links for direct recruiting outreach.
-
----
-
-## 🚀 Git & GitHub Deployment Instructions
-
-Since this directory is currently a local workspace, you can push it to your GitHub account (`Swapnil882`) using the following commands:
-
-### 1. Initialize Git Repository
-Open your terminal in the portfolio directory (`C:\projects\portfolio`) and run:
-```bash
-git init
-```
-
-### 2. Add files and make Initial Commit
-Stage all directory files and create your first local commit:
-```bash
-git add .
-git commit -m "Initial commit: Set up premium dark-themed portfolio website"
-```
-
-### 3. Link Remote Repository on GitHub
-Create a new blank repository named `portfolio` on your GitHub account (`Swapnil882`), then set it as the remote target:
-```bash
-# Rename default branch to main
-git branch -M main
-
-# Link remote URL
-git remote add origin https://github.com/Swapnil882/portfolio.git
-```
-
-### 4. Push to GitHub
-Upload your local files to your GitHub repository:
-```bash
-git push -u origin main
-```
